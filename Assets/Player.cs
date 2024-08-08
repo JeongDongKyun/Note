@@ -66,6 +66,8 @@ public class Player : MonoBehaviour // 아이템 생성
         var shop_item = set_item_info.item_list[Random.Range(0, set_item_info.item_list.Count)];
 
         inventory.inventory_list.Add(shop_item);
+
+        Debug.Log($"{shop_item.item_name}을 획득하였습니다");
     }
 
     /* private void Update()
